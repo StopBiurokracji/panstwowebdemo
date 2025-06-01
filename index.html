@@ -3,54 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Państwo dla człowieka</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="icon" href="favicon.ico">
     <script src="counter.js" defer></script>
     <script src="visits.js" defer></script>
 </head>
 <body>
 <header>
-    <h1>Państwo dla człowieka – nie dla papierologii i biurokracji</h1>
+    <h1>Państwo dla człowieka – nie dla biurokracji</h1>
 </header>
 <nav>
     <ul>
+        <li><a href="index.html">Strona główna</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="media.html">W mediach</a></li>
+        <li><a href="download.html">Materiały</a></li>
         <li><a href="volunteer.html">Wolontariusze</a></li>
-        <li><a href="download.html">Do pobrania</a></li>
+        <li><a href="media.html">Media</a></li>
     </ul>
 </nav>
 <main>
     <section>
-        <h2>📢 O co chodzi?</h2>
-        <p>To kampania obywatelska na rzecz stworzenia jednego, zintegrowanego systemu informatycznego dla urzędów w Polsce.</p>
-        <a class="button" href="#petycja">Podpisz petycję</a>
+        <h2>Witaj!</h2>
+        <p>To kampania obywatelska na rzecz uproszczenia państwa. Dołącz do nas!</p>
     </section>
     <section>
-        <h2>📎 Materiały do pobrania</h2>
-        <ul>
-            <li><a href="Prezentacja_Zintegrowany_System_PL_FINAL.pdf" target="_blank">Prezentacja PDF: Zintegrowany System</a></li>
-            <li><a href="komiksy.zip">Komiksy kampanii (8 grafik)</a></li>
-            <li><a href="banery.zip">Banery promocyjne do social mediów</a></li>
-            <li><a href="ulotka_kampanii.pdf">Ulotka informacyjna (PDF)</a></li>
-        </ul>
-    </section>
-    <section id="petycja">
-        <h2>🖊️ Petycja</h2>
-        <p>Popierasz pomysł? Podpisz się pod petycją online (wersja testowa – podpisy nie są zapisywane).</p>
-        <form onsubmit="dodajPodpis(); return false;">
-            <input type="text" id="imie" placeholder="Imię i nazwisko" required>
-            <input type="email" id="email" placeholder="Adres e-mail" required>
-            <button type="submit">Podpisz petycję</button>
-        </form>
-    </section>
-    <section>
-        <h2>📈 Licznik</h2>
-        <p>Podpisów: <span id="licznikPodpisow">0</span><br>Odwiedzin: <span id="licznikOdwiedzin">0</span></p>
+        <h3>Licznik odwiedzin:</h3>
+        <div id="visit-counter">...</div>
+        <h3>Liczba podpisów:</h3>
+        <div id="signature-counter">...</div>
     </section>
 </main>
 <footer>
-    Strona testowa kampanii obywatelskiej „Państwo dla człowieka” © 2025
+    <p>&copy; 2025 StopBiurokracji.com.pl</p>
 </footer>
 </body>
 </html>
