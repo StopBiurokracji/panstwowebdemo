@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Państwo dla człowieka</title>
     <link rel="stylesheet" href="style.css">
+    <script src="counter.js" defer></script>
+    <script src="visits.js" defer></script>
 </head>
 <body>
 <header>
@@ -19,11 +21,40 @@
     </ul>
 </nav>
 <main>
-    <h2>📢 O co chodzi?</h2>
-    <p>To kampania obywatelska na rzecz stworzenia jednego, zintegrowanego systemu informatycznego dla urzędów w Polsce...</p>
+    <section>
+        <h2>📢 O co chodzi?</h2>
+        <p>To kampania obywatelska na rzecz stworzenia jednego, zintegrowanego systemu informatycznego dla urzędów w Polsce. Zamiast 87 loginów, 14 platform i setek wniosków – jedno logowanie, jedno konto, jedna procedura.</p>
+        <a class="button" href="#petycja">Podpisz petycję</a>
+    </section>
+
+    <section>
+        <h2>📄 Materiały do pobrania</h2>
+        <ul>
+            <li><a href="Prezentacja_Zintegrowany_System_PL_FINAL.pdf" target="_blank">Prezentacja PDF: Zintegrowany System</a></li>
+            <li><a href="komiksy.zip">Komiksy kampanii (8 grafik)</a></li>
+            <li><a href="banery.zip">Banery promocyjne do social mediów</a></li>
+            <li><a href="ulotka_kampanii.pdf">Ulotka informacyjna (PDF)</a></li>
+        </ul>
+    </section>
+
+    <section id="petycja">
+        <h2>🖊️ Petycja</h2>
+        <p>Popierasz pomysł? Chcesz uproszczenia biurokracji? Podpisz się pod petycją online (wersja testowa – podpisy nie są zapisywane).</p>
+        <form>
+            <input type="text" placeholder="Imię i nazwisko" required><br><br>
+            <input type="email" placeholder="Adres e-mail" required><br><br>
+            <button type="submit">Podpisz petycję</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>📊 Statystyki</h2>
+        <p><strong>Podpisów:</strong> <span id="counter">0</span></p>
+        <p><strong>Odwiedzin:</strong> <span id="visits">0</span></p>
+    </section>
 </main>
 <footer>
-    Strona testowa kampanii „Państwo dla człowieka” © 2025
+    Strona testowa kampanii obywatelskiej „Państwo dla człowieka” © 2025
 </footer>
 </body>
 </html>
