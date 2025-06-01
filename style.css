@@ -1,1 +1,11 @@
-body { font-family: Arial; background: #fff; margin: 0; padding: 0; } header { background: navy; color: white; padding: 1em; } nav ul { list-style: none; display: flex; gap: 1em; } nav a { color: white; text-decoration: none; } main { padding: 1em; }
+
+.back-button {
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #0056b3;
+}
+.back-button:hover {
+    text-decoration: underline;
+}
