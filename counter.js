@@ -1,18 +1,10 @@
-
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
-    let counter = localStorage.getItem("signatures") || 0;
-    const counterEl = document.getElementById("counter");
-    if (counterEl) counterEl.textContent = counter;
-
-    if (form) {
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            counter++;
-            localStorage.setItem("signatures", counter);
-            if (counterEl) counterEl.textContent = counter;
-            alert("Dziękujemy za podpis! (wersja testowa – dane nie są zapisywane)");
-            form.reset();
-        });
-    }
-});
+function dodajPodpis() {
+    let count = localStorage.getItem('podpisy') || 0;
+    count++;
+    localStorage.setItem('podpisy', count);
+    document.getElementById('licznikPodpisow').innerText = count;
+    alert('Dziękujemy za podpis!');
+}
+window.onload = function() {
+    document.getElementById('licznikPodpisow').innerText = localStorage.getItem('podpisy') || 0;
+};

@@ -1,8 +1,6 @@
-
-document.addEventListener("DOMContentLoaded", function () {
-    let count = localStorage.getItem("visits") || 0;
-    count++;
-    localStorage.setItem("visits", count);
-    const el = document.getElementById("visits");
-    if (el) el.textContent = count;
-});
+window.onload = function() {
+    let visits = localStorage.getItem('odwiedziny') || 0;
+    visits++;
+    localStorage.setItem('odwiedziny', visits);
+    document.getElementById('licznikOdwiedzin').innerText = visits;
+};
