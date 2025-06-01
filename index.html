@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Państwo dla człowieka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Państwo dla człowieka – nie dla papierologii i biurokracji</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">O co chodzi?</a></li>
+        <li><a href="media.html">W mediach</a></li>
+        <li><a href="volunteer.html">Wolontariusze</a></li>
+        <li><a href="download.html">Do pobrania</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>O co chodzi?</h2>
+      <p>To kampania obywatelska na rzecz zintegrowanego systemu informatycznego. Zamiast 87 loginów – jedno logowanie, jedno konto, jedna procedura.</p>
+      <button onclick="window.location.href='index.html#petition'">Podpisz petycję</button>
+    </section>
+    <section id="petition">
+      <h2>Petycja</h2>
+      <form>
+        <input type="text" placeholder="Imię i nazwisko" required />
+        <input type="email" placeholder="Adres e-mail" required />
+        <button type="submit">Podpisz petycję</button>
+      </form>
+    </section>
+    <section>
+      <h2>Licznik</h2>
+      <div id="counter">Podpisów: <span id="signCount">0</span></div>
+      <div id="visits">Odwiedzin: <span id="visitCount">0</span></div>
+    </section>
+  </main>
+  <footer>© 2025 Strona testowa kampanii „Państwo dla człowieka”</footer>
+  <script src="counter.js"></script>
+  <script src="visits.js"></script>
+</body>
+</html>

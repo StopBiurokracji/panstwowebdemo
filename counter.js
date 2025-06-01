@@ -1,0 +1,1 @@
+document.getElementById('signCount').textContent = Math.floor(Math.random()*900+100);

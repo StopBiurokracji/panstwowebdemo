@@ -1,0 +1,1 @@
+document.getElementById('visitCount').textContent = Math.floor(Math.random()*3000+500);

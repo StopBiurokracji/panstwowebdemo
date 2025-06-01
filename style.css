@@ -1,0 +1,1 @@
+body { font-family: Arial; background: #fff; margin: 0; padding: 0; } header { background: navy; color: white; padding: 1em; } nav ul { list-style: none; display: flex; gap: 1em; } nav a { color: white; text-decoration: none; } main { padding: 1em; }
