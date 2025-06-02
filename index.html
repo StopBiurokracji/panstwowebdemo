@@ -16,12 +16,39 @@
         <a href="materialy.html">Materiały</a>
         <a href="wolontariusze.html">Wolontariusze</a>
         <a href="media.html">Media</a>
+        <a href="index-en.html">🇬🇧</a>
     </nav>
     <main>
         <h2>Witaj!</h2>
         <p>To kampania obywatelska na rzecz uproszczenia państwa. Dołącz do nas!</p>
         <p><strong>Licznik odwiedzin:</strong><br><span id="visitCounter">5678</span></p>
         <p><strong>Liczba podpisów:</strong><br><span id="signatureCounter">1234</span></p>
+        <section id="contact">
+            <h2>Formularz kontaktowy</h2>
+            <form action="mailto:kontakt@stopbiurokracji.com.pl" method="post" enctype="text/plain">
+                <label for="name">Imię i nazwisko:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Adres e-mail:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Wiadomość:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <input type="submit" value="Wyślij">
+            </form>
+        </section>
+        <section id="petition">
+            <h2>Podpisz petycję</h2>
+            <form action="#" method="post" onsubmit="alert('Dziękujemy za podpis! (wersja testowa)'); return false;">
+                <label for="fname">Imię:</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Nazwisko:</label><br>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="email">Email (opcjonalnie):</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Wyrażam zgodę na przetwarzanie danych zgodnie z RODO.</label><br><br>
+                <input type="submit" value="Podpisz petycję">
+            </form>
+        </section>
     </main>
     <footer>
         <p>© 2025 StopBiurokracji.com.pl</p>
