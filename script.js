@@ -1,0 +1,1 @@
+Opcjonalny skrypt JS do obsługi przycisków
